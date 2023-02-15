@@ -14,8 +14,8 @@
     --cor2:#000000;
     
     --font-padrao: verdana, sans-serif;
-    --font-texto: 'Sriracha', verdana, sans-serif;
-    --font-titulo: 'Passion One', verdana, sans-serif;
+    --font-texto: 'Sriracha', cursive;
+    --font-titulo: 'Passion One', cursive, sans-serif;
 
     
 }
@@ -23,12 +23,12 @@
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--font-titulo);
 }
 
 header {
     background-color: var(--cor2);
     color: var(--cor1);
-    font-family: var(--font-titulo);
     font-size: 20px;
     text-align: center;
 }
@@ -36,6 +36,7 @@ header {
 header > h1 {
     font-variant: small-caps;
     padding-top: 50px;
+    font-size: 10vw;
 }
 
 header > p {
@@ -60,6 +61,11 @@ section {
     font-family: var(--font-texto);
     line-height: 2em;
     padding-left: 20px;
+    font-size: 3vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -68,13 +74,28 @@ section.normal {
 }
 
 section.fundo {
-    background-color:rgba(0, 0, 0, 0.767);
+    background-color:rgba(0, 0, 0, 0.473);
     color: var(--cor1);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.fundo > p {
-    width: 400px;
-    background-color: #00000049;
+    display: inline-block;
+    padding: 5px;
+    background-color: #000000bd;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center ;
 }
 
 footer {
